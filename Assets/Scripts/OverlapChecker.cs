@@ -54,7 +54,7 @@ public class OverlapChecker : MonoBehaviour
         // Find the vector from the cuboid center to the sphere center
         Vector3 sphereToBox = sphereCenter - cuboidCenter;
 
-        // Project this vector onto each axis and clamp to the box bounds
+        
         float xDist = Mathf.Abs(Vector3.Dot(sphereToBox, cuboidTransform.right)) - cuboidHalfSize.x;
         float yDist = Mathf.Abs(Vector3.Dot(sphereToBox, cuboidTransform.up)) - cuboidHalfSize.y;
         float zDist = Mathf.Abs(Vector3.Dot(sphereToBox, cuboidTransform.forward)) - cuboidHalfSize.z;
